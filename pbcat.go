@@ -113,7 +113,7 @@ L:
 				break L
 			}
 			os.Stdout.Write(msg.Data)
-			os.Stdout.Write([]byte("\n"))
+			os.Stdout.Write([]byte("\x00"))
 		}
 	}
 	cancel()
